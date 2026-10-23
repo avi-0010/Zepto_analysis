@@ -89,7 +89,7 @@ SELECT name,mrp
 FROM zepto
 WHERE outOfStock is TRUE AND mrp >300;
 
---Calculate Estimated Revenue for each category
+--Calculate estimated inventory value for each category
 
 SELECT category,
 	SUM(discountSellingPrice * availableQuantity) as Total_Revenue	
